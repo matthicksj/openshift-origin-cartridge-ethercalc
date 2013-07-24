@@ -1,22 +1,22 @@
-Name: nodejs
-Cartridge-Short-Name: NODEJS
-Display-Name: Node.js 0.10
-Description: "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js is perfect for data-intensive real-time applications that run across distributed devices."
+Name: ethercalc
+Cartridge-Short-Name: ETHERCALC
+Display-Name: Ethercalc
+Description: "Ethercalc distribution based on the Node.js downloadable cartridge from Wesley Hearn (https://github.com/wshearn/openshift-origin-cartridge-nodejs)"
 Version: "0.10"
 Versions: ['0.10', '0.6']
-Source-Url: https://github.com/wshearn/openshift-origin-cartridge-nodejs.git
-License: MIT License
+Source-Url: https://github.com/matthicksj/openshift-origin-cartridge-ethercalc.git
+License: CPAL (Ethercalc) / MIT (Node.js)
 License-Url: https://raw.github.com/joyent/node/v0.6/LICENSE
-Vendor: www.nodejs.org
-Website: "http://www.nodejs.org/"
+License-Url: https://raw.github.com/audreyt/ethercalc/master/LICENSE.txt
+Vendor: ethercalc.net
+Website: "http://ethercalc.net/"
 Install-Build-Required: true
 Cartridge-Version: 0.0.1
-Cartridge-Vendor: wshearn
+Cartridge-Vendor: openshift
 Categories:
   - service
-  - javascript
   - nodejs
-  - web_framework
+  - ethercalc
 Help-Topics:
   "Developer Center": https://www.openshift.com/developers
 Cart-Data:
@@ -102,15 +102,3 @@ Endpoints:
       - Frontend:      "/health"
         Backend:       ""
         Options:       { health: true }
-Version-Overrides:
-  '0.6':
-    Display-Name: NodeJS 0.6
-    Provides:
-      - nodejs-0.6
-      - "nodejs"
-      - "nodejs (version) = 0.6.10"
-      - "nodejs (version) = 0.6"
-    Group-Overrides:
-      - components:
-        - nodejs-0.6
-        - web_proxy

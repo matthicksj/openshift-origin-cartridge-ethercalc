@@ -15,6 +15,7 @@ Cartridge-Version: 0.0.1
 Cartridge-Vendor: openshift
 Categories:
   - service
+  - web_framework
   - nodejs
   - ethercalc
 Help-Topics:

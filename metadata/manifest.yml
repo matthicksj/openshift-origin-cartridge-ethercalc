@@ -1,5 +1,5 @@
 Name: ethercalc
-Cartridge-Short-Name: ETHERCALC
+Cartridge-Short-Name: NODEJS
 Display-Name: Ethercalc
 Description: "Ethercalc distribution based on the Node.js downloadable cartridge from Wesley Hearn (https://github.com/wshearn/openshift-origin-cartridge-nodejs)"
 Version: "0.10"
